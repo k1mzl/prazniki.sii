@@ -1,0 +1,34 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#dbeafe" />
+      <stop offset="100%" stop-color="#eff6ff" />
+    </linearGradient>
+    <linearGradient id="shine" x1="160" y1="120" x2="480" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="480" rx="40" fill="url(#bg)" />
+  <path d="M138 116H502C516.255 116 528 127.745 528 142V386C528 400.255 516.255 412 502 412H138C123.745 412 112 400.255 112 386V142C112 127.745 123.745 116 138 116Z" fill="#ffffff" stroke="#93c5fd" stroke-width="12"/>
+  <path d="M138 176H502" stroke="#93c5fd" stroke-width="12" stroke-linecap="round"/> 
+  <rect x="156" y="76" width="32" height="72" rx="16" fill="#2563eb"/>
+  <rect x="452" y="76" width="32" height="72" rx="16" fill="#2563eb"/>
+  <rect x="184" y="210" width="88" height="88" rx="24" fill="#e0f2fe"/>
+  <rect x="316" y="210" width="88" height="88" rx="24" fill="#dbeafe"/>
+  <rect x="448" y="210" width="88" height="88" rx="24" fill="#ffedd5"/>
+  <rect x="184" y="322" width="88" height="88" rx="24" fill="#fee2e2"/>
+  <rect x="316" y="322" width="88" height="88" rx="24" fill="#dbeafe"/>
+  <rect x="448" y="322" width="88" height="88" rx="24" fill="#dcfce7"/>
+  <circle cx="520" cy="126" r="30" fill="#fbbf24" />
+  <path d="M520 114L528 140H556L532 154L540 180L520 164L500 180L508 154L484 140H512L520 114Z" fill="#ffffff"/>
+  <circle cx="196" cy="246" r="12" fill="#2563eb" />
+  <circle cx="196" cy="310" r="12" fill="#2563eb" />
+  <circle cx="328" cy="246" r="12" fill="#2563eb" />
+  <circle cx="328" cy="310" r="12" fill="#2563eb" />
+  <circle cx="460" cy="246" r="12" fill="#fb923c" />
+  <circle cx="460" cy="310" r="12" fill="#f97316" />
+  <rect x="168" y="162" width="304" height="12" rx="6" fill="#c7d2fe" />
+  <rect x="168" y="188" width="304" height="12" rx="6" fill="#c7d2fe" />
+  <circle cx="520" cy="126" r="54" fill="url(#shine)" />
+</svg>

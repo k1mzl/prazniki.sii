@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prazniki.si - Boljši koledar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Prazniki.si</p>
+          <h1>Koledar praznikov</h1>
+          <p class="subtitle">
+            Poišči praznik, upravljaj datum in označi svoje pomembne dni.
+          </p>
+          <div class="hero-badge">Nova aplikacija - boljša in enostavnejša</div>
+        </div>
+        <div class="hero-visual">
+          <img src="hero-illustration.svg" alt="Ilustracija koledarja in praznikov" />
+        </div>
+      </header>
+
+      <main class="grid-layout">
+        <section class="panel calendar-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Aktualni mesec</p>
+              <h2 id="monthTitle"></h2>
+            </div>
+            <div class="month-controls">
+              <button id="todayButton" class="secondary-button" type="button">📅 Danes</button>
+              <button id="currentMonthButton" class="secondary-button" type="button">↺ Nazaj na trenutni mesec</button>
+              <button id="prevMonth" aria-label="Prejšnji mesec">◀</button>
+              <button id="nextMonth" aria-label="Naslednji mesec">▶</button>
+            </div>
+          </div>
+
+          <div class="calendar-legend">
+            <span class="legend-item highlighted"><span></span>Izbran datum</span>
+            <span class="legend-item holiday"><span></span>Praznik</span>
+            <span class="legend-item type-drzavni"><span></span>Državni praznik</span>
+            <span class="legend-item type-kulturni"><span></span>Kulturni praznik</span>
+            <span class="legend-item type-verski"><span></span>Verski praznik</span>
+            <span class="legend-item type-dodatni"><span></span>Dodatni praznik</span>
+          </div>
+
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </section>
+
+        <section class="panel details-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label"><span class="icon">⭐</span> Označite datum</p>
+              <h2>Izbrani datum</h2>
+            </div>
+          </div>
+
+          <div class="selected-card" id="selectedCard">
+            <p class="selected-label">Klikni datum v koledarju.</p>
+            <p class="selected-date" id="selectedDate">Noben datum ni izbran.</p>
+            <div id="selectedHolidayInfo" class="holiday-info"></div>
+          </div>
+
+          <div class="search-block">
+            <label for="holidaySearch">Išči praznike</label>
+            <input id="holidaySearch" type="search" placeholder="Išči po imenu, tipu ali opisu praznika" />
+            <div class="result-count" id="resultCount">Prikazanih je vseh 0 praznikov.</div>
+          </div>
+
+          <div class="holiday-list" id="holidayList"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
